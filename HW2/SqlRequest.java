@@ -11,12 +11,27 @@ package HW.HW2;
 public class SqlRequest {
     public static void main(String[] args) {
         String test = "{'name:Ivanov', 'country:Russia', 'city:Moscow', 'age:null'}";
-        String[] uu = test.split(",");
-        StringBuilder nameLine = new StringBuilder(uu);
-        System.out.println(nameLine);
-        String out = nameLine.toString().replace(":", "=").split(",");
-        String out = nameLine;
-        System.out.println(out);
+        String[] subtest;
+        String del = ",";
+        subtest = test.split(del);
+        for (int i = 0; i < subtest.length; i++) {
+            System.out.println(subtest[i].charAt(i));
+        }
+
+        // работа через стрингбилдер
+        // StringBuilder nameLine = new StringBuilder(test);
+        // System.out.println(nameLine);
+        // nameLine.append("test");
+        // System.out.println(nameLine.length());
+        // nameLine.delete(0, nameLine.indexOf(":") + 1);
+        // System.out.println(nameLine);
+
+        // String out = nameLine.toString().replace(":", "=").split(",");
+        // String out = nameLine;
+        // for (String string : uu) {
+        // System.out.println(string);
+
+        // }
         // System.out.println(test);
         // String[] y = test.strip().split(",");
         // System.out.println(y);
