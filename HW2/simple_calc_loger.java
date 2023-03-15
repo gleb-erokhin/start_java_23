@@ -2,9 +2,6 @@ package HW.HW2;
 
 import java.util.logging.Logger;
 import java.util.logging.SimpleFormatter;
-
-// import HW.HW1.simple_calc;
-
 import java.io.IOException;
 import java.util.Scanner;
 import java.util.logging.FileHandler;
@@ -13,8 +10,10 @@ import java.util.logging.FileHandler;
  Реализовать простой калькулятор
  */
 public class simple_calc_loger {
+    private static Logger logger;
+
     public static void logCalc(String[] args) throws SecurityException, IOException {
-        Logger logger = Logger.getLogger(simple_calc_loger.class.getName());
+        logger = Logger.getLogger(simple_calc_loger.class.getName());
         FileHandler fh = new FileHandler("log.txt");
         logger.addHandler(fh);
         SimpleFormatter sFormat = new SimpleFormatter();
@@ -24,7 +23,7 @@ public class simple_calc_loger {
     }
 
     // "Метод ввода данных"
-    public static void inData(String[] args, Logger logger) throws SecurityException, IOException {
+    public static void inData(String[] args) throws SecurityException, IOException {
         Scanner scanner = new Scanner(System.in); // объявляем объекта класса сканер для считывания данных
         System.out.print("enter the number one: ");
         int number_a = scanner.nextInt(); // Полученное выражение записываем в переменную 1
@@ -37,12 +36,12 @@ public class simple_calc_loger {
         logger.info("Введен знак операции");
         scanner.close(); // закрываем объект сканер для экономии памяти
         // передаем данные в медод вычисления, после чего выводим ответ
-        System.out.println(calc(operation, number_a, number_b, logger));
+        System.out.println(calc(operation, number_a, number_b));
     }
 
     // Создаем медод для калькулятора, принимает на вход "метод ввода данных", и два
     // числа
-    public static int calc(String operation, int number_a, int number_b, Logger logger) {
+    public static int calc(String operation, int number_a, int number_b) {
         int calc = 0; // объявляем переменную для конечного результата
         // задаем выбор операция для вычисления
         switch (operation) {
@@ -69,8 +68,8 @@ public class simple_calc_loger {
         return calc;
     }
 
-    public static void main(String[] args, Logger logger) throws SecurityException, IOException {
-        inData(args); // вызываем метод ввода данных
+    public static void main(String[] args) throws SecurityException, IOException {
         logCalc(args);
+        inData(args); // вызываем метод ввода данных
     }
 }
