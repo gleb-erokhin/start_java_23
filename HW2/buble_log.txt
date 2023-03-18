@@ -1,0 +1,20 @@
+мар. 18, 2023 6:36:17 AM HW.HW2.buble_sort_log BubbleSort
+INFO:  Step (1) Array [2, 5, 6, 9, 4, 1, 8] move (6) to (9)
+мар. 18, 2023 6:36:17 AM HW.HW2.buble_sort_log BubbleSort
+INFO:  Step (2) Array [2, 5, 6, 4, 9, 1, 8] move (4) to (9)
+мар. 18, 2023 6:36:17 AM HW.HW2.buble_sort_log BubbleSort
+INFO:  Step (3) Array [2, 5, 6, 4, 1, 9, 8] move (1) to (9)
+мар. 18, 2023 6:36:17 AM HW.HW2.buble_sort_log BubbleSort
+INFO:  Step (4) Array [2, 5, 6, 4, 1, 8, 9] move (8) to (9)
+мар. 18, 2023 6:36:17 AM HW.HW2.buble_sort_log BubbleSort
+INFO:  Step (5) Array [2, 5, 4, 6, 1, 8, 9] move (4) to (6)
+мар. 18, 2023 6:36:17 AM HW.HW2.buble_sort_log BubbleSort
+INFO:  Step (6) Array [2, 5, 4, 1, 6, 8, 9] move (1) to (6)
+мар. 18, 2023 6:36:17 AM HW.HW2.buble_sort_log BubbleSort
+INFO:  Step (7) Array [2, 4, 5, 1, 6, 8, 9] move (4) to (5)
+мар. 18, 2023 6:36:17 AM HW.HW2.buble_sort_log BubbleSort
+INFO:  Step (8) Array [2, 4, 1, 5, 6, 8, 9] move (1) to (5)
+мар. 18, 2023 6:36:17 AM HW.HW2.buble_sort_log BubbleSort
+INFO:  Step (9) Array [2, 1, 4, 5, 6, 8, 9] move (1) to (4)
+мар. 18, 2023 6:36:17 AM HW.HW2.buble_sort_log BubbleSort
+INFO:  Step (10) Array [1, 2, 4, 5, 6, 8, 9] move (1) to (2)
