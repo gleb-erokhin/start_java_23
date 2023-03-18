@@ -14,7 +14,7 @@ public class simple_calc_loger {
 
     public static void logCalc(String[] args) throws SecurityException, IOException {
         logger = Logger.getLogger(simple_calc_loger.class.getName());
-        FileHandler fh = new FileHandler("log.txt");
+        FileHandler fh = new FileHandler("calc_log.txt");
         logger.addHandler(fh);
         SimpleFormatter sFormat = new SimpleFormatter();
         fh.setFormatter(sFormat);
@@ -28,12 +28,15 @@ public class simple_calc_loger {
         System.out.print("enter the number one: ");
         int number_a = scanner.nextInt(); // Полученное выражение записываем в переменную 1
         logger.info("Введено первое число");
+        logger.info(Integer.toString(number_a));
         System.out.print("enter the number two: ");
         int number_b = scanner.nextInt(); // Полученное выражение записываем в переменную 2
         logger.info("Введено второе число");
+        logger.info(Integer.toString(number_a));
         System.out.print("enter the operation + - / *: ");
         String operation = scanner.next(); // Получаем знак выполнения операции
-        logger.info("Введен знак операции");
+        logger.info("Введите знак операции");
+        logger.info(operation);
         scanner.close(); // закрываем объект сканер для экономии памяти
         // передаем данные в медод вычисления, после чего выводим ответ
         System.out.println(calc(operation, number_a, number_b));
@@ -47,19 +50,23 @@ public class simple_calc_loger {
         switch (operation) {
             case "+":
                 calc = number_a + number_b;
-                logger.info("Введен знак операции: +");
+                logger.info("Введен знак операции: +, результат = ");
+                logger.info(Integer.toString(calc));
                 break;
             case "-":
                 calc = number_a - number_b;
-                logger.info("Введен знак операции: -");
+                logger.info("Введен знак операции: -, результат = ");
+                logger.info(Integer.toString(calc));
                 break;
             case "/":
                 calc = number_a / number_b;
-                logger.info("Введен знак операции: /");
+                logger.info("Введен знак операции: /, результат = ");
+                logger.info(Integer.toString(calc));
                 break;
             case "*":
                 calc = number_a * number_b;
-                logger.info("Введен знак операции: *");
+                logger.info("Введен знак операции: *, результат = ");
+                logger.info(Integer.toString(calc));
                 break;
             default:
                 System.out.println("Неверная операция, попробуйте снова");

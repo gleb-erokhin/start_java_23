@@ -1,0 +1,16 @@
+мар. 18, 2023 7:01:07 AM HW.HW2.simple_calc_loger inData
+INFO: Введено первое число
+мар. 18, 2023 7:01:07 AM HW.HW2.simple_calc_loger inData
+INFO: 3
+мар. 18, 2023 7:01:09 AM HW.HW2.simple_calc_loger inData
+INFO: Введено второе число
+мар. 18, 2023 7:01:09 AM HW.HW2.simple_calc_loger inData
+INFO: 3
+мар. 18, 2023 7:01:12 AM HW.HW2.simple_calc_loger inData
+INFO: Введите знак операции
+мар. 18, 2023 7:01:12 AM HW.HW2.simple_calc_loger inData
+INFO: *
+мар. 18, 2023 7:01:12 AM HW.HW2.simple_calc_loger calc
+INFO: Введен знак операции: *, результат = 
+мар. 18, 2023 7:01:12 AM HW.HW2.simple_calc_loger calc
+INFO: 15
